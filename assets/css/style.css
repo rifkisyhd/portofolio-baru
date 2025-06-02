@@ -1,0 +1,44 @@
+:root{
+  --orange500: #f97316;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+#menu a {
+  position: relative;
+  text-decoration:none;
+  color: inherit; /* Warna teks default */
+  transition: color 0.3s ease; /* Transisi untuk perubahan warna */
+}
+
+#menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 0.15rem;
+  background-color: var(--orange500);
+  transition: all 0.3s ease;
+}
+
+#menu a:hover::after,
+#menu a.active::after {
+  width: 100%;
+  left: 0;
+}
+
+#menu a.active::after {
+  width: 0; /* Mengubah lebar menjadi 0 untuk menghilangkan garis bawah */
+}
+
+#menu a.active {
+  color: var(--orange500); /* Warna teks oranye untuk menu aktif */
+  text-decoration: none;
+}
+
+.active{
+  color: var(--orange500);
+}

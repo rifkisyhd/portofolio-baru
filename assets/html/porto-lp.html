@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+
+  </head>
+
+  <body style="font-family: 'Poppins', sans-serif">
+    <!-- navbar -->
+    <nav class="bg-[#101036] shadow fixed top-0 z-10 w-full h-20 flex items-center">
+      <div class="container mx-auto p-4 flex justify-between items-center text-white">
+        <a href="/index.html" class="text-2xl font-semibold italic">rifki<span class="text-orange-500">syhd</span></a>
+        <button id="menu-toggle" class="block md:hidden text-white focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul id="menu" class="hidden md:flex md:space-x-4 flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-[#101036] md:bg-transparent md:justify-end">
+          <li class="py-2 md:py-0">
+            <a href="#fitur" class="block text-base text-white px-4 md:px-0">Fitur</a>
+          </li>
+          <li class="py-2 md:py-0"><a href="#wireframe" class="block text-base text-white px-4 md:px-0">Wireframe</a></li>
+          <li class="py-2 md:py-0"><a href="#mockup" class="block text-base text-white px-4 md:px-0">Mockup</a></li>
+        </ul>
+      </div>
+    </nav>
+   
+    <!-- end navbar -->
+
+    <section class="p-4 bg-gray-100 min-h-screen">
+      <div class="container mx-auto text-gray-800 mt-24 md:mt-40"></div>
+      <!-- beranda -->
+      <div class="flex flex-col gap-x-2.5 md:flex-row items-center justify-between mb-12">
+        <div class="md:w-1/2">
+          <img src="/assets/image/bg-porto-lp.jpg" class="w-full h-auto rounded-lg shadow-lg transform hover:scale-105 transition duration-300" alt="Kost.io App Image" />
+        </div>
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <h1 class="text-4xl md:text-5xl font-bold mb-5 text-center md:text-left">Landing Page <span class="text-blue-700">Uprint</span></h1>
+          <p class="text-base md:text-lg mb-6 text-center md:text-left">
+            Dalam portofolio kami di Uprint Digital Printing, Anda akan menemukan berbagai proyek cetak yang menunjukkan kualitas dan kreativitas kami. Dari brosur yang menarik hingga kemasan yang unik, setiap karya mencerminkan komitmen kami terhadap detail dan kepuasan pelanggan. Jelajahi contoh-contoh inovatif yang telah kami realisasikan dan temukan inspirasi untuk proyek Anda berikutnya!
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <a href="#fitur" class="bg-blue-700 text-white px-12 py-3 rounded-full hover:bg-blue-800 transition duration-300">Lihat Fitur</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- fitur fitur -->
+       <section id="fitur">
+      <h2 class="text-3xl font-semibold mb-8 text-center text-blue-700">Fitur Utama</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <i class="fas fa-print text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Cetak Digital</h3>
+          <p>Menawarkan teknologi cetak digital terbaru untuk hasil cetak yang tajam dan detail.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <i class="fas fa-palette text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Warna yang Luas</h3>
+          <p>Menawarkan berbagai pilihan warna untuk menciptakan hasil cetak yang sesuai dengan kebutuhan Anda.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <i class="fas fa-calculator text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Harga yang Kompetitif</h3>
+          <p>Menawarkan harga yang kompetitif untuk berbagai jenis cetakan, sehingga Anda dapat mencetak dengan biaya yang efektif.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <i class="fas fa-user text-blue-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Dukungan Pelanggan</h3>
+          <p>Tim dukungan pelanggan yang siap membantu Anda dalam setiap tahap proses cetak.</p>
+        </div>
+      </div>
+    </section>
+
+
+      <!-- user research -->
+       <section id="">
+      <h2 class="text-3xl font-semibold mb-6 text-center text-blue-700">Ringkasan User Research</h2>
+            <div class="p-6 rounded-lg bg-white shadow-md mb-12">
+                <p class="text-base md:text-lg mb-4">
+                  Saya telah melakukan wawancara terhadap pemilik dari usaha Digital Printing untuk mengetahui kebutuhan, dan masalah dari usaha tersebut. Berdasarkan hasil wawancara, memperoleh hasil seperti ini.
+                </p>
+                <a class="inline-block bg-blue-700 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition duration-300" href="">Lihat Detail Hasil Survey</a>
+            </div>
+          </section>
+
+           <!-- userflow -->
+       <section id="userflow">
+        <h2 class="text-3xl font-semibold my-4 text-center text-blue-700 mt-12">Userflow</h2>
+        <div class="flex flex-col items-start">
+          <a href="../image/mockup-gula.svg" target="_blank"> <img src="../image/mockup-gula.svg" alt="User Flow" class="mx-auto w-full md:w-2/4 hover:scale-150 transition-transform duration-300" /></a>
+        </div>
+        <div class="flex flex-col items-start mt-12">
+          <a href="../image/mockup-gula2.svg" target="_blank">
+            <img src="../image/mockup-gula2.svg" alt="User Flow" class="mx-auto w-full md:w-2/4 hover:scale-150 transition-transform duration-300"
+          /></a>
+          <a class="text-blue-600 underline mb-10" href="https://www.figma.com/design/bRWTzsADrlXXqyDdrOwATa/IMK-LOMBA?node-id=1-8&t=5LVtieLalHVGfNN9-1">Detail Mockup</a>
+        </div>
+      </section>
+
+       <!-- design-system -->
+       <section id="design-system">
+        <h2 class="text-3xl font-semibold my-4 text-center text-blue-700 mt-12">Userflow</h2>
+        <div class="flex flex-col items-start">
+          <a href="../image/mockup-gula.svg" target="_blank"> <img src="../image/mockup-gula.svg" alt="User Flow" class="mx-auto w-full md:w-2/4 hover:scale-150 transition-transform duration-300" /></a>
+        </div>
+        <div class="flex flex-col items-start mt-12">
+          <a href="../image/mockup-gula2.svg" target="_blank">
+            <img src="../image/mockup-gula2.svg" alt="User Flow" class="mx-auto w-full md:w-2/4 hover:scale-150 transition-transform duration-300"
+          /></a>
+          <a class="text-blue-600 underline mb-10" href="https://www.figma.com/design/bRWTzsADrlXXqyDdrOwATa/IMK-LOMBA?node-id=1-8&t=5LVtieLalHVGfNN9-1">Detail Mockup</a>
+        </div>
+      </section>
+
+
+    <!-- start navigation -->
+    <section class="h-16 md:mx-20 mx-5 flex justify-between">
+      <a class="flex flex-row items-center hover:text-orange-500 hover:animate-pulse" href="kost-io.html">
+        <div class="mr-4">
+          <i class="fa-solid fa-arrow-left fa-2x"></i>
+        </div>
+        <p>Previous Project</p>
+      </a>
+      <a class="flex flex-row items-center hover:text-orange-500 hover:animate-pulse" href="porto-lp.html">
+        <p>Next Project</p>
+        <div class="ml-4">
+          <i class="fa-solid fa-arrow-right fa-2x"></i>
+        </div>
+      </a>
+    </section>
+    <!-- end navigation -->
+
+    <!-- start footer -->
+    <footer class="bg-[#101036] shadow mt-0">
+      <div class="container mx-auto p-4 text-center">
+        <p class="text-sm text-white">&copy; 2023 <a href="https://github.com/rifkisyhd" class="text-orange-500">rifkisyhd</a>. Semua hak dilindungi.</p>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+     <!-- link javascript -->
+   <script src="../js/script.js"></script>
+  </body>
+
+</html>

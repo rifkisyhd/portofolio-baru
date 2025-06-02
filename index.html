@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- tailwind css CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" />
+
+        <!-- icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+
+        <!-- style -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    </head>
+
+    <body class="bg-gray-100 text-gray-800">
+        <!-- navbar -->
+        <nav
+            class="bg-[#101036] shadow fixed top-0 z-10 w-full h-20 flex items-center">
+            <div
+                class="container mx-auto p-4 flex justify-between items-center text-white">
+                <a href="#" class="text-2xl font-bold italic"
+                    >Rifki<span class="text-orange-500">syhd</span></a
+                >
+                <button
+                    id="menu-toggle"
+                    class="block md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul
+                    id="menu"
+                    class="hidden md:flex md:space-x-4 flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-[#101036] md:bg-transparent md:justify-end">
+                    <li class="py-2 md:py-0">
+                        <a
+                            href="#tentang"
+                            class="block text-base text-white px-4 md:px-0"
+                            >Tentang Saya</a
+                        >
+                    </li>
+                    <li class="py-2 md:py-0">
+                        <a
+                            href="#project"
+                            class="block text-base text-white px-4 md:px-0"
+                            >Project</a
+                        >
+                    </li>
+                    <li class="py-2 md:py-0">
+                        <a
+                            href="#kontak"
+                            class="block text-base text-white px-4 md:px-0"
+                            >Kontak</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- end navbar -->
+
+        <!-- start hero -->
+        <section class="bg-[#101036] p-4">
+            <div
+                class="container mx-auto text-white min-h-screen flex items-center">
+                <div class="w-full">
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                        <div class="text-start px-4 md:px-0">
+                            <h2
+                                class="text-4xl md:text-6xl font-bold mb-4 italic">
+                                Muhammad
+                                <span class="text-orange-500">Rifki</span>
+                                Syahada
+                            </h2>
+                            <p class="text-sm md:text-base mb-5">
+                                Saya Rifki, antusias di bidang UI/UX dan web
+                                development, fokus menciptakan pengalaman
+                                pengguna yang intuitif dan antarmuka menarik.
+                            </p>
+                            <!-- icon -->
+                            <div class="flex justify-start space-x-4 my-5">
+                                <a
+                                    href="https://www.linkedin.com/in/rifki-syahada/"
+                                    class="text-white hover:text-orange-500 transition-colors duration-300">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a>
+                                <a
+                                    href="https://github.com/rifkisyhd"
+                                    class="text-white hover:text-orange-500 transition-colors duration-300">
+                                    <i class="fab fa-github fa-2x"></i>
+                                </a>
+                                <a
+                                    href="https://instagram.com/rifkisyhd_"
+                                    class="text-white hover:text-orange-500 transition-colors duration-300">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </a>
+                            </div>
+                            <!-- end icon -->
+
+                            <a
+                                href="#tentang"
+                                class="inline-block rounded bg-orange-500 text-white px-4 py-2 md:py-4 hover:bg-orange-400">
+                                Selengkapnya
+                            </a>
+                        </div>
+                        <div class="flex justify-center md:justify-end">
+                            <img
+                                src="assets/image/foto-baru.jpg"
+                                alt="Muhammad Rifki Syahada"
+                                class="w-3/4 md:w-2/4 h-auto rounded-full shadow-lg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end hero -->
+
+        <!-- start about -->
+        <section id="tentang" class="mb-8 bg-gray-100 mx-auto p-4 mt-8">
+            <div class="container mx-auto text-gray-800">
+                <h2
+                    class="text-3xl text-center text-orange-500 font-semibold mb-4">
+                    Tentang Saya
+                </h2>
+                <p
+                    class="text-base text-center bg-white p-4 rounded-lg shadow-md">
+                    "Halo! Perkenalkan, namaku Muhammad Rifki Syahada. Aku
+                    adalah seseorang yang antusias dalam menjelajahi dunia dan
+                    belajar hal-hal baru. Saya percaya bahwa setiap pengalaman
+                    memberikan pelajaran berharga dan peluang untuk tumbuh.
+                    Sebagai individu yang kreatif dan penuh semangat, saya
+                    senang mengeksplorasi berbagai bidang seperti seni,
+                    teknologi, dan penulisan. Saya selalu terbuka untuk
+                    tantangan baru dan bersemangat untuk berkolaborasi dengan
+                    orang-orang yang berbagi minat dan visi yang sama. Mari kita
+                    menjalin hubungan dan bersama-sama menciptakan perubahan
+                    positif dalam dunia ini.
+                </p>
+            </div>
+
+            <h2
+                class="text-3xl text-center text-orange-500 font-semibold mb-4 mt-10">
+                Skill
+            </h2>
+            <div
+                class="flex justify-center text-orange-500 bg-white rounded-lg shadow-md p-4">
+                <div class="mx-5">
+                    <i class="fa-brands fa-figma fa-3x"></i>
+                </div>
+                <div class="mx-5">
+                    <i class="fa-brands fa-html5 fa-3x"></i>
+                </div>
+                <div class="mx-5">
+                    <i class="fa-brands fa-css3-alt fa-3x"></i>
+                </div>
+                <div class="mx-5">
+                    <i class="fa-brands fa-js fa-3x"></i>
+                </div>
+                <div class="mx-5">
+                    <i class="fa-brands fa-wordpress fa-3x"></i>
+                </div>
+                <div class="mx-5">
+                    <i class="fa-brands fa-react fa-3x"></i>
+                </div>
+            </div>
+
+            <h2
+                class="text-3xl text-center text-orange-500 font-semibold mb-4 mt-10">
+                Sertifikat
+            </h2>
+            <div class="mx-auto flex flex-col gap-8">
+                <div
+                    class="flex flex-row gap-4 justify-center items-center bg-white p-4 rounded-lg shadow-md">
+                    <img
+                        src="assets/image/sertif-gdsc.jpg"
+                        class="w-2/5 h-auto rounded-lg hover:scale-125 transition duration-300" />
+                    <div class="flex flex-col text-start max-w-80">
+                        <h2 class="text-xl font-semibold">
+                            Google Developer Student Clubs
+                        </h2>
+                        <p class="text-base">
+                            Sertifikat partisipasi dalam kegiatan GDSC.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-row gap-4 justify-center items-center bg-white p-4 rounded-lg shadow-md">
+                    <img src="assets/image/sertif-myskill.jpg" class="w-2/5
+                    h-auto rounded-lg hover:scale-125 transition duration-300""
+                    />
+                    <div class="flex flex-col text-start max-w-80">
+                        <h2 class="text-xl font-semibold">My Skill</h2>
+                        <p class="text-base">
+                            Sertifikat partisipasi dalam class UI/UX Research &
+                            Design.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-row gap-4 justify-center items-center bg-white p-4 rounded-lg shadow-md">
+                    <img src="assets/image/sertif-gamatechno.jpg" class="w-2/5
+                    h-auto rounded-lg hover:scale-125 transition duration-300""
+                    />
+                    <div class="flex flex-col text-start max-w-80">
+                        <h2 class="text-xl font-semibold">Gamatechno</h2>
+                        <p class="text-base">
+                            Sertifikat partisipasi dalam class Web Developer.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-row gap-4 justify-center items-center bg-white p-4 rounded-lg shadow-md">
+                    <img src="assets/image/sertif-hacktiv.jpg" class="w-2/5
+                    h-auto rounded-lg hover:scale-125 transition duration-300""
+                    />
+                    <div class="flex flex-col text-start max-w-80">
+                        <h2 class="text-xl font-semibold">Hacktiv8</h2>
+                        <p class="text-base">
+                            Sertifikat partisipasi dalam studi independen MSIB
+                            batch 7 React JS for Frontend Website Developer.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-row gap-4 justify-center items-center bg-white p-4 rounded-lg shadow-md">
+                    <img src="assets/image/sertif-dasarui.jpg" class="w-2/5
+                    h-auto rounded-lg hover:scale-125 transition duration-300""
+                    />
+                    <div class="flex flex-col text-start max-w-80">
+                        <h2 class="text-xl font-semibold">Udemy</h2>
+                        <p class="text-base">
+                            Sertifikat partisipasi dalam class dsar-dasar user
+                            interface (UI).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about -->
+
+        <!-- start project -->
+        <section id="project" class="mb-8 bg-gray-100 mx-auto p-4 mt-8">
+            <div class="container mx-auto text-gray-800">
+                <h2
+                    class="text-3xl text-center text-orange-500 font-semibold mb-4">
+                    Project
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <img
+                            src="assets/image/kost-io.png"
+                            class="h-80 w-auto mb-4" />
+                        <h3 class="text-xl font-semibold mb-2">Kost.io App</h3>
+                        <p class="text-base mb-4">
+                            Aplikasi ini menampilkan solusi inovatif yang
+                            memudahkan ribuan pengguna dalam mencari tempat
+                            tinggal yang nyaman. Dengan fitur pencarian canggih,
+                            informasi lengkap, dan ulasan terpercaya, kami
+                            memberikan pengalaman pencarian yang praktis dan
+                            efisien. Bergabunglah dengan kami dan temukan kos
+                            kosan idealmu dengan mudah melalui aplikasi pencari
+                            kos kosan terbaik di pasaran.
+                        </p>
+                        <button
+                            class="rounded bg-orange-500 text-white px-4 py-2 hover:bg-orange-400">
+                            <a href="assets/html/kost-io.html">Selengkapnya</a>
+                        </button>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <img
+                            src="assets/image/peduli-gula.png"
+                            class="h-80 w-auto mb-4" />
+                        <h3 class="text-xl font-semibold mb-2">
+                            Peduli Gula App
+                        </h3>
+                        <p class="text-base mb-4">
+                            Aplikasi ini menyediakan solusi inovatif untuk
+                            membantu pengguna dalam mengontrol kondisi diabetes
+                            mereka. Dengan fitur-fitur canggih seperti pelacakan
+                            gula darah, pengingat obat, dan pemantauan pola
+                            makan, aplikasi ini memudahkan pengguna dalam
+                            menjaga kesehatan sehari-hari. Dalam portofolio
+                            kami, kami menunjukkan komitmen kami untuk
+                            memberikan pengalaman terbaik dalam mengelola
+                            diabetes. Bergabunglah dengan kami dan temukan cara
+                            yang lebih mudah untuk hidup sehat melalui aplikasi
+                            pengelolaan diabetes kami yang unggul.
+                        </p>
+                        <button
+                            class="rounded bg-orange-500 text-white px-4 py-2 hover:bg-orange-400">
+                            <a href="assets/html/porto-peduligula.html"
+                                >Selengkapnya</a
+                            >
+                        </button>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <img
+                            src="assets/image/landingpage-uprint.png"
+                            class="h-80 w-auto mb-4" />
+                        <h3 class="text-xl font-semibold mb-2">Landing Page</h3>
+                        <p class="text-base mb-4">
+                            Website ini adalah redesign landing page Uprint
+                            bertujuan menyederhanakan navigasi, memperkuat
+                            visual branding, dan meningkatkan pengalaman
+                            pengguna untuk memudahkan pelanggan dalam memesan
+                            layanan cetak digital.
+                        </p>
+                        <button
+                            class="rounded bg-orange-500 text-white px-4 py-2 hover:bg-orange-400">
+                            <a href="assets/html/porto-lp.html">Selengkapnya</a>
+                        </button>
+                    </div>
+
+                    <!-- <div class="bg-white p-4 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Project 4</h3>
+          <p class="text-base mb-4">Deskripsi singkat tentang project 4.</p>
+        </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- end project -->
+
+        <!-- start contact -->
+        <!-- <section id="kontak" class="mb-8 bg-gray-100 mx-auto p-4 mt-8">
+    <div class="container mx-auto text-gray-800">
+      <h2 class="text-3xl text-center text-orange-500 font-semibold mb-4">Kontak</h2>
+      <p class="text-lg text-center">Anda dapat menghubungi saya melalui email di <a href="rifkisyahada81@gmail.com" class="text-blue-500 underline">rifkisyahada81@gmail.com</a>.</p>
+    </div>
+  </section> -->
+        <!-- end contact -->
+
+        <!-- start kontak -->
+        <section
+            id="kontak"
+            class="bg-[#101036] py-8 h-80 flex items-center justify-center">
+            <div class="container mx-auto text-white text-center">
+                <h2 class="text-3xl font-semibold mb-8">Mari Terhubung</h2>
+                <div class="flex justify-center space-x-6">
+                    <a
+                        href="https://www.linkedin.com/in/rifki-syahada/"
+                        class="text-white hover:text-orange-500 transition-colors duration-300">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a
+                        href="https://github.com/rifkisyhd"
+                        class="text-white hover:text-orange-500 transition-colors duration-300">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a
+                        href="https://instagram.com/rifkisyhd_"
+                        class="text-white hover:text-orange-500 transition-colors duration-300">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- end let connect -->
+
+        <!-- start footer -->
+        <footer class="bg-[#101036] shadow mt-0">
+            <div class="container mx-auto p-4 text-center">
+                <p class="text-sm text-white">
+                    &copy; 2023
+                    <a
+                        href="https://github.com/rifkisyhd"
+                        class="text-orange-500"
+                        >rifkisyhd</a
+                    >. Semua hak dilindungi.
+                </p>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </body>
+
+    <!-- link javascript -->
+    <script src="/assets/js/script.js"></script>
+</html>
